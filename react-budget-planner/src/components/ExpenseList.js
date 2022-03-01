@@ -1,5 +1,6 @@
 import React from "react";
-import {MdDelete} from "react-icons/md"
+import {MdDelete} from "react-icons/md";
+import Item from "./expenses";
 
 
 
@@ -7,8 +8,8 @@ const ExpenseList =({expenses})=>{
   return(
     <div>
       <ul className="lists">
-        {expenses.map(expense =>{
-          return <div key={expense.id} expense={expense}/>
+        {expenses.map((expense) =>{
+          return <Item key={expense.id} expense={expense}/>
             
         
         })}

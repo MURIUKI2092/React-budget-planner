@@ -1,5 +1,8 @@
 import React from "react";
 import Input from '@mui/material/Input';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+
 
 const ExpenseForm =()=>{
   return(
@@ -10,6 +13,9 @@ const ExpenseForm =()=>{
       <div>
       <Input  type= "number" placeholder="Enter money spent"  />
       </div>
+      <Button variant="contained" endIcon={<SendIcon />}>
+  Submit
+</Button>
       
     </div>
   )
